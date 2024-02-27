@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./logo.jpg">
+  <title>Meet the Team | WebDevDaily</title>
+
+  <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: lightgray;
+        margin: 9rem 1rem;
+        color: hsla(0, 0%, 0%, 1);
+        font-family: 'Mulish', sans-serif;
+    }
+
+    .container {
+        background: white;
+        box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+    }
+
+    h3 {
+        text-align: center;
+        /*margin-bottom: 2rem;*/
+        font-size: 1.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .card-container {
+        display: grid;
+        gap: 2rem;
+    }
+
+    .card {
+        text-align: center;
+    }
+
+    .card img {
+        border-radius: 50%;
+        width: 5.5rem;
+        position: relative;
+        top: 2.5rem;
+    }
+
+    .card-content {
+        background: hsla(212, 41%, 96%, 1);
+        border-radius: 1rem;
+        height: 6.5rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0em;
+        padding-top: 3.2rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+        font-weight: 400;
+        letter-spacing: 0em;
+    }
+
+    @media (min-width: 768px) {
+        .card-container {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .card-container {
+            gap: 1.5rem;
+        }
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h3>Meet The Team</h3>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="jacob jones.png">
+                <div class="card-content">
+                    <h6>Jacob Jones</h6>
+                    <p>Senior Web Developer</p>
+                </div>
+            </div>
+        
+
+            <div class="card">
+                <img src="sarah smith.png">
+                <div class="card-content">
+                    <h6>Sarah Smith</h6>
+                    <p>Senior Graphic Designer</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="mike micheals.png">
+                <div class="card-content">
+                    <h6>Mike micheals</h6>
+                    <p>Senior Account Manager</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
